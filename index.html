@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://source.unsplash.com/random/200x200?sig=1">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico"> -->
+    <title>Entering DOM</title>
+</head>
+<body>
+    <div class="first">
+        <img width="100%" height="200px" style="border-top-left-radius: 20px; border-top-right-radius: 20px;" src="https://source.unsplash.com/random/200x200?sig=1" alt="">
+        <div class="first-inner">
+            <h1>Iron Man</h1>
+            <p id="">About Iron Man</p>
+            <button id="btn-show">More</button>
+        </div>
+    </div>
+    <div id="div">
+        <div class="second">
+            <img class="second-img" width="100%" height="auto" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;" src="https://source.unsplash.com/random/200x200?sig=1" alt="">
+            <div class="second-inner" style="margin: 0; z-index: 1;">
+                <h1>Iron Man</h1>
+                <p id="">Супергерой комиксов издательства Marvel Comics, созданный писателем Стэном Ли, сценаристом Ларри Либером и художниками Доном Хеком и Джеком Кирби. Железный человек впервые появился в комиксе Tales of Suspense</p>
+                <button id="btn-cancel">Cansel</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <!-- TASK 1  -->
+        <div class="wrapper-1">
+            <H1>Log in</H1>
+            <form class="wrapper-1-form">
+                    <label for="input-1" class="form-1-label">
+                        Email
+                        <input type="email" placeholder="example@gmail.com" id="input-1">
+                    </label>
+                    <label for="input-2" class="form-1-label">
+                        Password
+                        <input placeholder="Please enter password" type="password"  id="input-2">
+                        <span id="show-eye" class="show-eye" style="display: none !important;">&#9680;</span>
+                    </label>
+            </form>
+        </div>
+        <!-- TASK-2 -->
+        <div class="wrapper-2">
+            <h1>Please enter properties!</h1>
+            <form class="inp-wrapper">
+                <label>
+                    Width
+                    <input type="text"  id="input-width" placeholder="100">
+                </label>
+                <label>
+                    Height
+                    <input type="text"  placeholder="100" id="input-height">
+                </label>
+                <label>
+                    Radius
+                    <input type="text" placeholder="50%" id="input-radius">
+                </label>
+                <label >
+                    Color
+                    <input type="text" placeholder="green"  id="input-color">
+                </label>
+                <button type="button" id="set-changes" class="btn-form-2">Apply</button>
+                <button type="button" id="reset-changes" class="btn-form-2">RESET</button>
+            </form>
+            <div id="change-box" class="box"></div>
+        </div>
+        <!-- TASK-3 -->
+        <form id="form-3">
+            <h1>Set A Password</h1>
+            <label for="form-3-input">
+                <span class="br">&#9884;</span>
+                <input id="form-3-input" type="password">
+                <span id="show-eye2" class="show-eye" style="top: 5px; left: 340px; display: none;">&#9680;</span>
+            </label>
+            <progress id="file" class="file"  max="100"></progress>
+            <label id="show-info" for="file" style="font-size: 20px;"></label>
+        </form>
+    </div>
+    
+    <!-- <img src="https://source.unsplash.com/random/200x200?sig=1" alt=""> -->
+    <script src="./app.js"></script>
+</body>
+</html>
